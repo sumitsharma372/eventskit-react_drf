@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.nav_btn {
+  @apply p-2 bg-purple-700 text-gray-100 rounded;
+}
+
+.log_btn {
+  @apply p-2 bg-indigo-700 text-white rounded;
+}
+
+.form_item {
+  @apply flex flex-col gap-2 items-center;
+}
+
+.form_label {
+  @apply text-lg text-left w-full;
+}
+
+.form_input {
+  @apply p-2 rounded border border-gray-300 w-full outline-none;
+}
+
+.purple_btn {
+  @apply p-2 bg-purple-700 text-gray-100 rounded my-2;
+}
+.validation_error {
+  @apply text-left w-full text-red-400 mb-3 text-sm mt-[-4px] px-1;
+}
+
+.form_heading {
+  @apply text-2xl text-center font-bold text-gray-700 my-3 uppercase border-b;
+}
+.event_info {
+  @apply flex flex-col gap-2 items-center;
+}
